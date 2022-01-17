@@ -384,9 +384,7 @@ cd -
 
 我的 [vuepress-devkit](https://github.com/zhangyunchencc/vuepress-devkit.git) 已经开源放在了 Github 上，还有很多想要增加的功能，例如添加评论模块、自动生成侧边栏目录、增加网站分析工具等等，在这里欢迎大家 Star 或者 Fork 。
 
-以上，
 
 
-张韵晨 | Front End Engineer | 2018.10
 
 
