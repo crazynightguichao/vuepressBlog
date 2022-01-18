@@ -23,7 +23,7 @@ module.exports = {
     themeConfig: {
       nav:[ // 导航栏配置
         {text: '前端基础', link: '/accumulate/' },
-        {text: '算法题库', link: '/algorithm/'},
+        {text: '作品案例', link: '/algorithm/'},
         {text: '诗和远方', link: '/others/'},
         {text: 'GitHub', link: 'https://github.com/crazynightguichao'}      
       ],
