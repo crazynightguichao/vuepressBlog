@@ -1,11 +1,11 @@
 /*
  * @Author: jiaguichao
  * @Date: 2022-01-17 17:15:22
- * @LastEditTime: 2022-01-17 17:39:59
+ * @LastEditTime: 2022-02-21 10:24:20
  * @Description: Do not edit
  */
 module.exports = {
-    title: '贾桂超个人主页',
+    title: '月下独酌',
     description: 'Welcome to my personal site',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
     //   ['link', { rel: 'icon', href: '/images/photo.jpg' }],
@@ -22,10 +22,11 @@ module.exports = {
     },
     themeConfig: {
       nav:[ // 导航栏配置
-        {text: '前端基础', link: '/accumulate/' },
+        {text: '知识库', link: '/accumulate/' },
         {text: '作品案例', link: '/algorithm/'},
         {text: '诗和远方', link: '/others/'},
-        {text: 'GitHub', link: 'https://github.com/crazynightguichao'}      
+        {text: 'VuePress', link: '/guide'},
+        {text: 'GitHub', link: 'https://github.com/crazynightguichao'}    
       ],
       // sidebar:{
       //   '/accumulate/': [
