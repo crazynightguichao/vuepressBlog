@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2022-02-22 11:30:38
+ * @LastEditTime: 2022-02-24 11:35:18
  * @Description: Do not edit
 -->
 #  作品展示
@@ -30,9 +30,12 @@
 #### [广告公司官网案例](https://crazynightguichao.github.io/UAIF1901ADV)
 
 ## 休闲小游戏
+#### [植物大战僵尸](https://crazynightguichao.github.io/Plants_VS_Zombie)
+#### [太空保护者](https://crazynightguichao.github.io/SpaceHuggers)
+#### [俄罗斯拼图](https://crazynightguichao.github.io/RussianPuzzle)
 #### [捕鱼](https://crazynightguichao.github.io/fishing)
 #### [扫雷](https://crazynightguichao.github.io/minesweeper)
-#### [植物大战僵尸](https://crazynightguichao.github.io/Plants_VS_Zombie)
+#### [黑洞广场](https://crazynightguichao.github.io/black-hole-square-master/public)
 
 
 ## 微信小程序

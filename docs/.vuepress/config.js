@@ -1,7 +1,7 @@
 /*
  * @Author: jiaguichao
  * @Date: 2022-01-17 17:15:22
- * @LastEditTime: 2022-02-21 10:24:20
+ * @LastEditTime: 2022-02-23 10:23:11
  * @Description: Do not edit
  */
 module.exports = {
@@ -28,6 +28,7 @@ module.exports = {
         {text: 'VuePress', link: '/guide'},
         {text: 'GitHub', link: 'https://github.com/crazynightguichao'}    
       ],
+      logo: '/images/logo.png',
       // sidebar:{
       //   '/accumulate/': [
       //       {

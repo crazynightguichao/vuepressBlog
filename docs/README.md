@@ -1,16 +1,18 @@
 ---
 home: true
 heroImage: /images/me.png
-actionText: 进入主页 →
+heroText: 我的个人主页
+tagline: 随便逛逛吧
+actionText: 进入知识库 →
 # actionLink: guide.html
 actionLink: /accumulate/
-# features:
-# - title: 简洁至上
-#   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-# - title: Vue驱动
-#   details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-# - title: 高性能
-#   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+features:
+- title: HTML5+CSS3+JS
+  details: 这是基础中的基础，只有扎实的基础才能让我们在这条路上走的更远。
+- title: Vue
+  details: 用于构建用户界面的渐进式框架，轻量、简单、双向数据绑定、组件化、虚拟DOM、运行速度快。
+- title: 小程序
+  details: 用户可便捷地获取服务，无需安装或下载即可使用，具有更丰富的功能和出色的使用体验。
 footer:  Copyright © | 2022 JiaGuiChao
 ---
 
