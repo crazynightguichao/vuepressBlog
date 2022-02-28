@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2022-02-24 11:35:18
+ * @LastEditTime: 2022-02-28 10:05:26
  * @Description: Do not edit
 -->
 #  作品展示
@@ -32,10 +32,21 @@
 ## 休闲小游戏
 #### [植物大战僵尸](https://crazynightguichao.github.io/Plants_VS_Zombie)
 #### [太空保护者](https://crazynightguichao.github.io/SpaceHuggers)
+<font size=2>
+&emsp;&emsp;[仅支持PC端]<br>
+&emsp;&emsp;WASD 或方向键：移动、跳跃和攀爬<br>
+&emsp;&emsp;Z 或左键单击：射击，大多数东西会破裂，有些会燃烧<br>
+&emsp;&emsp;X 或中键：滚动，短暂的无敌状态，还可灭火<br>
+&emsp;&emsp;C 或右键单击：手榴弹，每条命有 3 个
+</font>
+
 #### [俄罗斯拼图](https://crazynightguichao.github.io/RussianPuzzle)
+<font size=2>&emsp;&emsp;双击旋转，拖动图形</font>
+
 #### [捕鱼](https://crazynightguichao.github.io/fishing)
 #### [扫雷](https://crazynightguichao.github.io/minesweeper)
 #### [黑洞广场](https://crazynightguichao.github.io/black-hole-square-master/public)
+#### [吃豆豆](http://passer-by.com/pacman)
 
 
 ## 微信小程序
