@@ -1,7 +1,7 @@
 /*
  * @Author: jiaguichao
  * @Date: 2022-01-17 17:15:22
- * @LastEditTime: 2022-02-23 10:23:11
+ * @LastEditTime: 2022-03-01 11:31:38
  * @Description: Do not edit
  */
 module.exports = {
@@ -23,6 +23,19 @@ module.exports = {
     themeConfig: {
       nav:[ // 导航栏配置
         {text: '知识库', link: '/accumulate/' },
+        {
+            text: '面试题',
+            items:[
+                
+                {text:'JS基础', link: '/interview/js基础'},
+                {text:'HTML', link: '/interview/HTML'},
+                {text:'CSS', link: '/interview/CSS'},
+                {text:'Vue', link: '/interview/vue'},
+                {text:'浏览器', link: '/interview/浏览器'},
+                {text:'性能', link: '/interview/性能'},
+                {text:'HTTP', link: '/interview/HTTP'}, 
+            ]
+        },
         {text: '作品案例', link: '/algorithm/'},
         {text: '诗和远方', link: '/others/'},
         {text: 'VuePress', link: '/guide'},
