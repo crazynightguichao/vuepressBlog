@@ -1,12 +1,13 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2022-03-01 17:46:39
+ * @LastEditTime: 2022-03-04 17:14:14
  * @Description: Do not edit
 -->
 #  作品展示
 
 ## 网页案例
+#### [爱的绽放案例](https://crazynightguichao.github.io/loveBloom)
 #### [比翼双飞案例](https://crazynightguichao.github.io/happyCouple/birdFly)
 #### [特效姓名案例](https://crazynightguichao.github.io/Special_Name)
 #### [圣诞老人案例](https://crazynightguichao.github.io/Christmas/Christmas)
@@ -47,7 +48,10 @@
 #### [扫雷](https://crazynightguichao.github.io/minesweeper)
 #### [黑洞广场](https://crazynightguichao.github.io/black-hole-square-master/public)
 #### [吃豆豆](http://passer-by.com/pacman)
-
+<font size=2>
+&emsp;&emsp;[仅支持PC端]<br>
+&emsp;&emsp;空格暂停/开始，方向键移动<br>
+</font>
 
 ## 微信小程序
 #### 小贾诗词

@@ -1,7 +1,7 @@
 /*
  * @Author: jiaguichao
  * @Date: 2022-01-17 17:15:22
- * @LastEditTime: 2022-03-01 11:31:38
+ * @LastEditTime: 2022-03-04 10:32:55
  * @Description: Do not edit
  */
 module.exports = {
@@ -17,6 +17,7 @@ module.exports = {
     ],
     serviceWorker: true, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
+    // plugins: ['@vuepress/back-to-top'],
     markdown: {
       lineNumbers: true // 代码块是否显示行号
     },
