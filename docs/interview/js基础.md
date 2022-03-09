@@ -1,11 +1,11 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-03-01 10:41:56
- * @LastEditTime: 2022-03-03 11:23:55
+ * @LastEditTime: 2022-03-08 19:03:48
  * @Description: Do not edit
 -->
 # JS基础
-## 1 类型及检测方式
+## 一、 类型及检测方式
 #### 1. JS内置类型
 JavaScript 的数据类型有下图所示
 ![](/images/type.png)
