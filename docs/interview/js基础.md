@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-03-01 10:41:56
- * @LastEditTime: 2022-03-08 19:03:48
+ * @LastEditTime: 2022-03-11 15:29:30
  * @Description: Do not edit
 -->
 # JS基础
@@ -171,3 +171,22 @@ getType(/123/g)      //"RegExp" toString返回
 - 转换为数字
 - 转换为字符串
 ![](/images/type2.png)
+
+## 二、apply/call/bind 原理
+方法|call|apply|bind
+--|:--:|:--:|:--:
+方法参数|多个|单个数组|多个
+方法功能|函数调用改变this|函数调用改变this|函数调用改变this
+返回结果|直接执行|直接执行|返回待执行函数
+
+- 在浏览器里，在全局范围内this 指向window对象；
+- 在函数中，this永远指向最后调用他的那个对象；
+- 构造函数中，this指向new出来的那个新的对象；
+- call、apply、bind中的this被强绑定在指定的那个对象上；
+- 箭头函数中this比较特殊,箭头函数this为父作用域的this，不是调用时的this.要知道前四种方式,都是调用时确定,也就是动态的,而箭头函数的this指向是静态的,声明的时候就确定了下来；
+- apply、call、bind都是js给函数内置的一些API，调用他们可以为函数指定this的执行,同时也可以传参。
+```
+func.call(thisArg, param1, param2, ...)
+func.apply(thisArg, [param1,param2,...])
+func.bind(thisArg, param1, param2, ...)
+```

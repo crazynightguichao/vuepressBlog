@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2022-03-09 09:57:15
+ * @LastEditTime: 2022-05-16 10:11:26
  * @Description: Do not edit
 -->
 # 前端积累
@@ -18,7 +18,6 @@ npm install -g increase-memory-limit
 increase-memory-limit
 ```
 没错，就如此简单。
-
 ## 二、 Vue监听浏览器窗口大小发生变化触发的事件
 #### 监听浏览器窗口大小发生改变并触发事件在JS里有原生事件，但在vue里很多同学不知道应在将此事件写在哪里，下面给大家提供一个完整的案例。
 ```
@@ -193,5 +192,110 @@ loadAll(response)
 ::: tip 结果
 浏览器瞬间渲染出十万条数据。
 :::
+## 四、localStorage遇到一个小坑
+::: tip 场景
+设置一个Switch开关，switch 打开时存localStorage值为当前开关的value，用户重新进入页面时，获取当前localStorage值设为开关状态。
+但是获取到了localStorage值而Switch却没有生效。一头雾水.....
+:::
+**仔细一看：**
+![](/images/localTip.png)
+::: warning 真相大白
+打印出来竟然是字符串！！！
+怪不得不生效！！！
+:::
+
+因此，把字符串转换为Boolean就可以了。
+```
+JSON.parse('true')   // 返回true
+JSON.parse('false')  // 返回false
+```
+## 五、 JS中 ?? 与 || 的区别
+
+::: tip 相同点
+用法相同：
+- 都是前后是值，中间用符号连接。根据前面的值来判断最终返回前面的值还是后面的值。
+:::
+::: warning 不同点
+判断方式不同：
+- 使用 ?? 时，只有当值1为null或undefined时才返回值2；
+- 使用 || 时，值1会转换为布尔值判断，为true返回值1，false 返回值2
+:::
+
+```
+<!-- ?? -->
+undefined ?? 2	// 2
+null ?? 2		// 2
+0 ?? 2			// 0
+"" ?? 2			// ""
+true ?? 2		// true
+false ?? 2		// false
+
+<!-- || -->
+undefined || 2	// 2
+null || 2		// 2
+0 || 2			// 2
+"" || 2			// 2
+true || 2		// true
+false || 2		// 2
+```
+#### 总的来说，??更加适合在不知道变量是否有值时使用。
+## 六、获取某一天的N年后的第N天
+
+::: tip 用法
+- 输入：this.$getYearDay(2022-03-03,1,1)
+- 输出：2023-03-04
+:::
+
+```
+Vue.prototype.$getYearDay = function(value,year,day){  // 获取N年后的第N天
+      // value 代表开始日期 year代表几年 day代表几天
+      let time = new Date(value);
+      let y = time.getFullYear() + year;
+      let m = time.getMonth() + 1
+      let d = time.getDate();
+      //考虑二月份场景，若N年后的二月份日期大于该年的二月份的最后一天，
+	  则取该年二月份最后一天
+      if(m == '02' || m == 2){
+        var monthEndDate = new Date(y ,m,0).getDate();
+        if(parseInt(d) > monthEndDate){//为月底时间
+          //取两年后的二月份最后一天
+          d = monthEndDate;
+        }
+      }
+      let date = y + "-" + m + "-" + d
+      let time2 = new Date(date)
+      time2.setDate(time2.getDate() + day);//获取Day天后的日期
+      var y2 = time2.getFullYear();
+      var m2 = time2.getMonth() + 1;//获取当前月份的日期
+      var d2 = time2.getDate();
+      let date2 = y2 + "-" + m2 + "-" + d2
+      return date2;
+    }
+```
+## 七、element-ui 修改 el-tooltip 样式
+**tooltip所在的div位置：**
+
+![](/images/tooltipDiv.png)
+#### 解决方案
+```
+<!-- 给el-tooltip标签添加popper-class属性 -->
+<el-tooltip content="提示文字" popper-class="my-tooltip"></el-tooltip>
+```
+::: tip 注意
+该代码片段，需要写在根文件的style里，如果写在当前文件里也并非不可，但是需要将scope取消掉。
+:::
+
+```
+<!-- 具体样式自行更改 -->
+.my-tooltip {
+    padding: 2px 3px;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 1.6;
+    .is-light{
+        border: 1px solid #ebeef5;
+    }
+}
+```
 
 

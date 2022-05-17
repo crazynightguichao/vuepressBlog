@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2022-03-09 09:56:15
+ * @LastEditTime: 2022-05-16 10:31:43
  * @Description: Do not edit
 -->
 #  作品展示
@@ -13,6 +13,7 @@
 #### [圣诞老人案例](https://crazynightguichao.github.io/Christmas/Christmas)
 #### [雪人案例](https://crazynightguichao.github.io/snowman)
 #### [烟花缭乱2022](https://crazynightguichao.github.io/Fireworks)
+#### [3D旋转相册](https://crazynightguichao.github.io/3d-carousel)
 #### [抽奖](https://crazynightguichao.github.io/luckDraw)
 #### [时钟案例](https://crazynightguichao.github.io/UAIF1901SZ/index(1))
 
@@ -20,6 +21,7 @@
 #### [关联交易管理系统](http://27.154.242.142:19277)
 #### [融合通信云管理系统](https://oam.uct.zone)
 #### [津贝尔后台管理系统](http://oa.jbrsys.com)
+#### [360绩效考核系统](/images/360.jpg)
 #### 纪检监督管理平台
 #### OA国产办公自动化系统
 #### 星际驰舟短信管理平台
