@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-03-01 10:41:56
- * @LastEditTime: 2022-03-09 18:13:54
+ * @LastEditTime: 2022-10-08 18:30:59
  * @Description: Do not edit
 -->
 ## Vue
@@ -167,3 +167,13 @@ new Vue是一个单例模式，不会有任何的合并操作，所以根实例�
 - 中介者模式：vuex
 - 策略模式
 - 外观模式
+### 五、说一说keep-alive实现原理
+::: tip keep-alive
+keep-alive组件接受三个属性参数：include、exclude、max
+:::
+- include 指定需要缓存的组件name集合，参数格式支持String, RegExp, Array。当为字符串的时候，多个组件名称以逗号隔开。
+- exclude 指定不需要缓存的组件name集合，参数格式和include一样。
+- max 指定最多可缓存组件的数量,超过数量删除第一个。参数格式支持String、Number。
+#### 原理
+- keep-alive实例会缓存对应组件的VNode,如果命中缓存，直接从缓存对象返回对应VNode
+- LRU（Least recently used） 算法根据数据的历史访问记录来进行淘汰数据，其核心思想是“如果数据最近被访问过，那么将来被访问的几率也更高”。(墨菲定律：越担心的事情越会发生)
