@@ -1,7 +1,7 @@
 <!--
  * @Author: jiaguichao
  * @Date: 2022-01-17 11:03:24
- * @LastEditTime: 2023-03-15 16:14:02
+ * @LastEditTime: 2023-09-27 10:37:52
  * @Description: Do not edit
 -->
 # 前端积累
@@ -1519,3 +1519,20 @@ let arrs = this._chunk(array, 1000)  // 1000个一组截取数组
 ::: tip 踩坑的地方
 svg标签要加id，我一开始是获取div的apps的dom，let rootNode = document.getElementById(`apps`),但是点击下载一直没反应，最后排查了好久才发现原来是这个问题。初始化的时候给svg手动创建一个id：.attr("id", "svgColumn")，获取该dom：document.getElementById(`svgColumn`)，就没问题了。
 :::
+
+## 十四、 统计一个文件夹里面各个后缀名的代码行数
+```
+find . "(" -name "*.vue" -or -name "*.css" -or -name "*.js" -or -name "*.scss" ")" -print | xargs cat | wc -l
+```
+![](/images/rowsNumber.png)
+
+## 十五、 window.open打开页面报错CSRF ERROR
+在项目开发中遇到这样一个问题，项目里用window.open打开了一个外链，但是外链界面无法显示，页面有一个报错CSRF ERROR。奇怪的是复制这个链接，直接在浏览器地址栏粘贴，然后回车就可以正常打开。。。
+#### 问题原因：
+当点击访问页面中外链地址时，会产生一个http请求（用于获取外链地址内容），此时出于安全策略（一些用户信息或登录信息会通过url传递），浏览器会在请求头中添加一个referrer，用来表示当前请求是从哪个页面跳转来的，也就是访问来源。当外链网站对访问做判断时，于是会出现诸如403 Forbidden、The HTTP request is not acceptable for the requested resource.问题。
+
+#### 解决方法：
+```
+在项目的的<head>中加入如下<meta>代码：
+    <meta name="referrer" content="no-referrer" />
+```

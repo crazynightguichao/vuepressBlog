@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/me.png
+heroImage: /images/logo.png
 heroText: 我的个人主页
 tagline: 随便逛逛吧
 actionText: 进入知识库 →
